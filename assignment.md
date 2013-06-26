@@ -5,14 +5,16 @@
 * Practice using an API as a datasource to populate a file and access information stored in that file.
 
 ** Story **
-A user should be able to see a list of their favorite movies
-A user should be able to add new favorite movies
-A user should be able to view information about a favorite single movie
+
+* A user should be able to see a list of their favorite movies
+* A user should be able to add new favorite movies
+* A user should be able to view information about a favorite single movie
 
 ** BONUS **
-A user should be able to see a list of their favorite TV Series
-A user should be able to add a new favorite TV Series
-A user should be able to view information about a single favorite TV Series
+
+* A user should be able to see a list of their favorite TV Series
+* A user should be able to add a new favorite TV Series
+* A user should be able to view information about a single favorite TV Series
 
 **Activity:**
 
