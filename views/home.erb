@@ -1,7 +1,15 @@
+<!-- hit from '/' displays... -->
 <h2>Input the name of your favorite movie.</h2>
 
-<form action="/view_movie_info" method="get">
-<input type="text" name="movie">     <!-- name is synonymous with params -->
-<button>Find movie</button>
+<form action="/view_movie_info/" method="get">
+  <input type="text" name="title">
+  <!-- Whatever is inputted is a parameter being passed in to the actual url.   -->
+  <button>Find movie</button>
 </form>
+
+<h3>Here are all your favorite movies!</h3>
+<ul>
+  <li><%= @movies %></li>
+</ul>
+
 

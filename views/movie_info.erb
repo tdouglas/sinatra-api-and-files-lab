@@ -1,10 +1,14 @@
+<!-- hit from '/view_movie_info/:title' displays... -->
 
 <h2>Check the box to add <%= @title %> movie to your favorites</h2>
 
-<form action="/add_movie/<%= @title %>" method="get">
+<%= @queried_movie.title %></br>
+<img src= "<%= @queried_movie.poster %>"/></br>
+<%= @queried_movie.plot %>
+
+
+<form action="/add_movie/<%= @title %>" method="post">
   <input type="checkbox" name="fave">
-     <!-- name is synonymous with params -->
-  <input type="text" name="title">
      <!-- name is synonymous with params -->
   <button>Add to favorites</button>
 </form>
