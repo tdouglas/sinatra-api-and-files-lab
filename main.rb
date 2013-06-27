@@ -8,10 +8,10 @@ get '/' do
   search = Imdb::Search.new('movies.csv')
   @search_movies = {}
   search.each do |line_in_file|
-    split_line = line_in_file.split("|")
-    title = split_line[0]
-    movie_data = split_line.shift
-    split_line[:title] = movie_data
+    movie_elements = line_in_file.split("|")
+    title = movie_elements[0]
+    movie_data = movie_elements.shift
+    movies[:title] = movie_data
   end
   movie_file.close
   erb :home
